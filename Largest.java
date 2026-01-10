@@ -5,12 +5,12 @@ public class Largest {
         Scanner sc=new Scanner(System.in);
         int min = 1;
         int max = 50;
-        System.out.println("Enter value of A :");
-        int a = sc.nextInt();
-        System.out.println("Enter value of b :");
-        int b = sc.nextInt();
-        System.out.println("Enter value of C :");
-        int c = sc.nextInt();
+        
+        int a = 23;
+        
+        int b = 34;
+        
+        int c = 44;
         if(a < min || a > max ||b < min || b > max || c < min || c > max ) {
             System.out.println("Invalid : Input out of Range");
         }
