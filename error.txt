@@ -1,0 +1,34 @@
+Started by user Yuvaraj S
+Running as SYSTEM
+Building in workspace C:\ProgramData\Jenkins\.jenkins\workspace\git
+The recommended git tool is: NONE
+No credentials specified
+ > C:\Program Files\Git\bin\git.exe rev-parse --resolve-git-dir C:\ProgramData\Jenkins\.jenkins\workspace\git\.git # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/yuvarajsaravanan21/Jenkin.git # timeout=10
+Fetching upstream changes from https://github.com/yuvarajsaravanan21/Jenkin.git
+ > C:\Program Files\Git\bin\git.exe --version # timeout=10
+ > git --version # 'git version 2.52.0.windows.1'
+ > C:\Program Files\Git\bin\git.exe fetch --tags --force --progress -- https://github.com/yuvarajsaravanan21/Jenkin.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/main^{commit}" # timeout=10
+Checking out Revision bdcdab23ac3d79cac723e71949557014ba3458be (refs/remotes/origin/main)
+ > C:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -f bdcdab23ac3d79cac723e71949557014ba3458be # timeout=10
+Commit message: "third"
+ > C:\Program Files\Git\bin\git.exe rev-list --no-walk bdcdab23ac3d79cac723e71949557014ba3458be # timeout=10
+[git] $ cmd /c call C:\WINDOWS\TEMP\jenkins15350986189621084173.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\git>javac Largest.java 
+
+C:\ProgramData\Jenkins\.jenkins\workspace\git>java Largest 
+Enter value of A :
+Exception in thread "main" java.util.NoSuchElementException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:945)
+	at java.base/java.util.Scanner.next(Scanner.java:1602)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2267)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2221)
+	at Largest.main(Largest.java:9)
+
+C:\ProgramData\Jenkins\.jenkins\workspace\git>exit 1 
+Build step 'Execute Windows batch command' marked build as failure
+Finished: FAILURE
