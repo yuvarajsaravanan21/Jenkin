@@ -6,9 +6,9 @@ public class Largest {
         int min = 1;
         int max = 50;
         
-        int a = 100;
+        int a = 23;
         
-        int b = 34004;
+        int b = 34;
         
         int c = 44;
         if(a < min || a > max ||b < min || b > max || c < min || c > max ) {
