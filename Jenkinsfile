@@ -1,20 +1,34 @@
 pipeline {
     agent any
+
     stages {
-        stage('Build') {
+
+        stage('Checkout') {
             steps {
-                echo 'Build from Jenkinsfile'
-            
+                git branch: 'main', url: 'https://github.com/yuvarajsaravanan21/Jenkin.git'
             }
-            post{
-                success{
-                    echo 'build Successful'
-                }
-                failure{
-                    echo "Build failed'
-                }
+        }
+
+        stage('Compile') {
+            steps {
+                bat 'javac Hello.java'
             }
-        
+        }
+
+        stage('Run') {
+            steps {
+                bat 'java Hello'
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Build and Compilation Successful'
+            archiveArtifacts artifacts: '*.class'
+        }
+        failure {
+            echo 'Build Failed due to error'
         }
     }
 }
